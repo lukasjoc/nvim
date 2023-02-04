@@ -1,6 +1,6 @@
 -- function hi(modifier, guifg, guibg) vim.cmd("hi " .. modifier .. " guifg=" .. guifg) end
 
-vim.opt.colorcolumn = "99"
+vim.opt.colorcolumn = "90"
 vim.opt.termguicolors = true
 vim.opt.background = "dark"
 

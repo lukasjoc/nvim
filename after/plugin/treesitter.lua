@@ -1,16 +1,21 @@
 require'nvim-treesitter.configs'.setup {
     -- A list of parser names, or "all"
     ensure_installed = {
-        "c", "lua", "rust", "javascript", "jsdoc", "typescript", "bash", "make",
-        "cmake", "vue", "ninja", "nix", "cpp", "html", "css", "diff", "dockerfile",
-        "gitignore", "go", "gomod", "gowork", "haskell", "julia", "toml", "yaml",
-        "json", "json5", "latex", "julia", "markdown", "perl", "php", "proto", "sql",
-        "verilog"
+        -- keep else nvim breaks lols (core packs)
+        "vim", "help", "lua", "c",
+        -- specials
+        "javascript", "jsdoc", "typescript", "bash", "vue", "html", "css", "diff",
+        "dockerfile", "gitignore", "go", "gomod", "gowork", "toml", "yaml", "json",
+        "markdown", "sql",
     },
 
     sync_install = false,
     auto_instal = false,
-    ignore_install = {"java", "fish", "erlang"},
+    ignore_install = {
+        "java", "fish", "erlang",
+        -- somehow this has some problems now ?? :/
+        "julia",
+    },
 
     highlight = {
         enable = true,
@@ -22,6 +27,7 @@ require'nvim-treesitter.configs'.setup {
                 return true
             end
         end,
+        -- i tell you - keep this turned ">>OFF<<"
         additional_vim_regex_highlighting = false,
     },
     indent = {
