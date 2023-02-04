@@ -1,0 +1,27 @@
+Usage:
+---
+
+Install Packer: 
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+ ~/.local/share/nvim/site/pack/packer/start/packer.nvim
+
+Setup Packer:
+nvim +PackerInstall
+
+Setup Node Env like this:
+Node: /home/lukasjoc/.config/nvm/versions/node/v18.13.0/bin/node
+NPM: /home/lukasjoc/.config/nvm/versions/node/v18.13.0/bin/npm
+---------------------
+
+/home/lukasjoc/.config/nvm/versions/node/v18.13.0/lib
+├── @volar/language-server@1.0.24
+├── @volar/vue-language-server@1.0.24
+├── bash-language-server@4.6.1
+├── corepack@0.15.2
+├── eslint@8.32.0
+├── neovim@4.10.1
+├── tree-sitter-cli@0.20.7
+├── typescript-language-server@3.0.3
+├── typescript@4.9.4
+└── vscode-langservers-extracted@4.5.0
+
