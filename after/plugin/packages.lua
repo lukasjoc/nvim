@@ -4,7 +4,11 @@ vim.opt.colorcolumn = "90"
 vim.opt.termguicolors = true
 vim.opt.background = "dark"
 
-vim.cmd("colo kanagawa")
+-- vim.cmd("colo kanagawa")
+local status, abyss = pcall(require, 'abyss')
+if not status then return end
+abyss.setup()
+
 vim.cmd("set ruler list listchars=tab:\\ \\ ,trail:.")
 
 local telescope = require("telescope")
