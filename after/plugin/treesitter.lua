@@ -2,11 +2,24 @@ require'nvim-treesitter.configs'.setup {
     -- A list of parser names, or "all"
     ensure_installed = {
         -- keep else nvim breaks lols (core packs)
-        "vim", "help", "lua", "c",
-        -- specials
-        "javascript", "jsdoc", "typescript", "bash", "vue", "html", "css", "diff",
-        "dockerfile", "gitignore", "go", "gomod", "gowork", "toml", "yaml", "json",
-        "markdown", "sql",
+        "vim", "help", "lua", "c", "make",
+
+        -- important grammars
+        "rust", "ada", "clojure", "commonlisp", "cpp",
+        "perl", "php", "python",
+
+        -- webdev
+        "javascript", "jsdoc", "typescript", "vue", "html", "css",
+
+        -- go
+        "go", "gomod", "gowork", "gosum",
+
+        -- git stuffs
+        "git_rebase", "gitignore", "gitcommit", "gitattributes",
+
+        -- etc files 
+        "bash", "diff", "dockerfile", "toml", "yaml", "json", "ini",
+        "markdown", "sql", "comment", "devicetree", "awk",
     },
 
     sync_install = false,
