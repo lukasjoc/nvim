@@ -24,4 +24,7 @@ require('lspconfig')['volar'].setup{
 require('lspconfig')['eslint'].setup{
     on_attach = on_attach,
 }
+require('lspconfig')['pyright'].setup{
+    on_attach = on_attach,
+}
 

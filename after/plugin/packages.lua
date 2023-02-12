@@ -1,5 +1,3 @@
--- function hi(modifier, guifg, guibg) vim.cmd("hi " .. modifier .. " guifg=" .. guifg) end
-
 vim.opt.colorcolumn = "90"
 vim.opt.termguicolors = true
 vim.opt.background = "dark"
@@ -8,6 +6,13 @@ vim.opt.background = "dark"
 local status, abyss = pcall(require, 'abyss')
 if not status then return end
 abyss.setup()
+
+-- Custom Scope for Parsers
+-- ; highlights.scm todoreadme
+vim.cmd("hi link @todoreadmeHeader Identifier")
+vim.cmd("hi link @todoreadmeCategory Special")
+vim.cmd("hi link @todoreadmeDelimiter Delimiter")
+---
 
 vim.cmd("set ruler list listchars=tab:\\ \\ ,trail:.")
 

@@ -22,13 +22,17 @@ return require('packer').startup(function(use)
     use({"neovim/nvim-lspconfig"})
     use({
         "nvim-telescope/telescope.nvim",
-        -- tag = '0.1.0',
         branch = "0.1.x",
         requires = {
             { "nvim-lua/plenary.nvim" },
             { "nvim-telescope/telescope-fzf-native.nvim", run = "make" }
         }
     })
+
+    -- somehow still needed even when using the rust-analyzer lsp server
+    -- @see https://github.com/rust-lang/rust.vim/issues/461
+    use({"rust-lang/rust.vim"})
+
     use({"kdheepak/JuliaFormatter.vim"})
     use({"hrsh7th/nvim-cmp"})
     use({"hrsh7th/cmp-buffer"})

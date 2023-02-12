@@ -32,3 +32,10 @@ vim.opt.laststatus = 0
 
 vim.opt.colorcolumn = "92"
 vim.opt.termguicolors = true
+
+vim.filetype.add({
+    extension = {
+        tor        = 'todoreadme',
+        todoreadme = 'todoreadme',
+    },
+})
