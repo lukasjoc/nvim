@@ -6,7 +6,12 @@ return require('packer').startup(function(use)
     use({"atelierbram/Base4Tone-nvim"})
     use({"rebelot/kanagawa.nvim"})
     use({"barrientosvctor/abyss.nvim"})
-
+    use({
+        "lewis6991/impatient.nvim",
+        run = function()
+            require("impatient")
+        end,
+    })
     use({"RRethy/nvim-align"})
     use({
         "nvim-treesitter/nvim-treesitter",
