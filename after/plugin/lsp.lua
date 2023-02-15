@@ -6,6 +6,7 @@ local on_attach = function (client, bufnr)
     vim.keymap.set('n', 'gl'   , vim.lsp.buf.definition    , bufopts)
     vim.keymap.set('n', 'gi'   , vim.lsp.buf.implementation, bufopts)
     vim.keymap.set('n', 'K'    , vim.lsp.buf.hover         , bufopts)
+    vim.keymap.set('n', 'F'    , vim.diagnostic.open_float , bufopts)
     vim.keymap.set('n', '<C-k>', vim.lsp.buf.signature_help, bufopts)
 end
 
