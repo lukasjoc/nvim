@@ -19,6 +19,8 @@ vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4
 vim.opt.smartindent = true
 vim.wo.wrap = false
+vim.o.textwidth = 0
+vim.o.wrapmargin = 0
 vim.wo.linebreak = false
 vim.wo.list = false
 
