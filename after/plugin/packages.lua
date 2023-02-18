@@ -2,10 +2,10 @@ vim.opt.colorcolumn = "90"
 vim.opt.termguicolors = true
 vim.opt.background = "dark"
 
-vim.cmd("colo gruvbox-flat")
--- local status, abyss = pcall(require, 'abyss')
--- if not status then return end
--- abyss.setup()
+-- vim.cmd("colo gruvbox-flat")
+local status, abyss = pcall(require, 'abyss')
+if not status then return end
+abyss.setup()
 
 -- Custom Scope for Parsers
 -- ; highlights.scm todoreadme
