@@ -9,7 +9,7 @@ require'nvim-treesitter.configs'.setup {
         "perl", "php", "python",
 
         -- webdev
-        "javascript", "jsdoc", "typescript", "vue", "html", "css",
+        "javascript", "jsdoc", "typescript", "vue", "html", "css", "http"
 
         -- go
         "go", "gomod", "gowork", "gosum",
